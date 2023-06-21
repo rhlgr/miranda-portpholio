@@ -1,0 +1,738 @@
+@font-face {
+    font-family: Domaine;
+    src: url(./Domaine.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+}
+html,body{
+    width: 100%;
+ height: 100%;
+}
+.main{
+    background-color: #222;
+    overflow-x: hidden;
+}
+.page1{
+    height: 130vh;
+    width: 100vw;
+    background-color: #C4BDB3;
+    position: relative;
+    overflow: hidden;
+}
+.nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    border-bottom: 1px solid black;
+}
+.nav img{
+    height: 23px;
+    width: 30%;
+}
+.nav h5{
+    font-size: 18px;
+    font-weight: 100;
+    width: 30%;
+    letter-spacing: -1px;
+}
+.nav i{
+    width: 30%;
+    text-align: right;
+}
+.elems{
+    /* background-color: aqua; */
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+.elem1 {
+    width: 30%;
+    height: 100%;
+    cursor: pointer;
+    /* background-color: aquamarine; */
+}
+.elem1 h4,.elem3 h4{
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Canopee";
+}
+.elem1 h4 span,.elem3 h4 span{
+    background-color:#B73C12;
+    color:#C4BDB3 ;
+    font-weight: 100;
+    font-size: 18px;
+    padding: 4px;
+    border-radius: 5px;
+    margin-left: 8px;
+}
+.elem1 p,.elem3 p{
+    font-size: 22px;
+    font-weight: 100;
+    font-family: "Domaine";
+    color: #535353;
+}
+.elem2 {
+    width: 30%;
+    height: 100%;
+    cursor: pointer;
+    border-right: 1px solid rgba(0, 0, 0, 0.436);
+    padding: 20px 60px;
+    text-align: center;
+    border-left: 1px solid rgba(0, 0, 0, 0.436);
+    /* background-color: aquamarine; */
+}
+.elem2 h2{
+    font-family: "Canopee";
+    font-size: 70px;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+.elem2 h3{
+    font-family: "Domaine";
+    font-size: 45px;
+    font-weight: lighter;
+    color: #323232;
+    letter-spacing: -1px;
+    margin: 20px 0;
+}
+
+.elem2 h6{
+    font-family: "Domaine";
+    font-size: 20px;
+    font-weight: lighter;
+    color: #323232;
+}
+.elem3 {
+    width: 30%;
+    height: 100%;
+    cursor: pointer;
+    /* background-color: aquamarine; */
+}
+
+.img-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease .5s;
+}
+.elem1 .img-div{
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid black;
+}
+.elem3 .img-div{
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid black;
+}
+.elem1:hover img{
+    scale: 1.1;
+}
+.elem3:hover img{
+    scale: 1.1;
+}
+.page1 h1{
+    width: 96%;
+    font-weight: 100;
+    font-size: 550px;
+    font-family: "Canopee";
+    background-color: #000000e4;
+    color: #C6BEB5;
+    line-height: 500px;
+    margin-left: 30px;
+    letter-spacing: -20px;
+}
+.page2{
+    width: 100%;
+    height: 150vh;
+    background-color: #C4BDB3;
+    display: flex;
+    align-items: center;
+    padding: 30px 30px;
+    justify-content: space-between;
+}
+.page2-left{
+height: 100%;
+width: 34%;
+padding-right: 50px;
+border-right: 1px solid black;
+
+}
+.page2-left img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+.page2-left h2{
+    font-family: "canopee";
+    font-size: 120px;
+    font-weight: 100;
+    line-height: 130px;
+    letter-spacing: -8px;
+}
+.page2-left h2 span{
+    font-family: "canopee";
+    font-size: 210px;
+
+}
+.page2-left p{
+    font-family: "domaine";
+ font-size: 32px;
+}
+/* .page2-left p span{
+background-color: black;
+color: #C4BDB3;
+ font-size: 50px;
+} */
+
+.page2-right{
+    height: 100%;
+    width: 66%;
+    padding-left: 40px;
+}
+.page2-right img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+.page2-right h1{
+    font-family: "canopee";
+    font-size: 115px;
+    font-weight: 100;
+    letter-spacing: -2px;
+}
+.page3{
+position: relative;
+    background-color: #C4BDB3;
+    height: 50vh;
+}
+.page3 h1{
+    font-size: 430px;
+    font-weight:100;
+    font-family: "canopee";
+    background-color: black;
+    color: #C4BDB3;
+    width: fit-content;
+    margin-left: 2%;
+    padding: 0 30px;
+    letter-spacing: -15px;
+    line-height: 380px;
+    
+}
+.page3 img{
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 2%;
+}
+.page4{
+    width: 100%;
+    height: 140vh;
+    background-color: #C4BDB3;
+    padding: 40px 0;
+    display: flex;
+
+}
+.page4-left{
+    width: 65%;
+    height: 100%;
+    padding-right: 20px;
+    border-right: 1px solid black;
+}
+.page4-left-top{
+    height: 30%;
+    display: flex;
+    width: 100%;
+}
+.pege4-elem1 {
+    width: 45%;
+    height: 100%;
+    cursor: pointer;
+    padding:0 30px;
+    border-right: 1px solid rgba(0, 0, 0, 0.436)
+}
+.pege4-elem1 h2{
+    font-family: "Canopee";
+    font-size: 60px;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+.pege4-elem1 h3{
+    font-family: "Domaine";
+    font-size: 45px;
+    font-weight: 100;
+    color: #323232;
+    letter-spacing: -1px;
+    margin: 20px 0;
+
+}
+.pege4-elem1 h6{
+    font-family: "Domaine";
+    font-size: 20px;
+    font-weight: lighter;
+    color: #323232;
+}
+.page4-elem2 {
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    padding:0 30px;
+}
+.page4-elem2 h4{
+    font-size: 34px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: "Canopee";
+}
+.page4-elem2 h4 span{
+    background-color:#B73C12;
+    color:#C4BDB3 ;
+    font-weight: 100;
+    font-size: 18px;
+    padding: 4px;
+    border-radius: 5px;
+    margin-left: 8px;
+}
+.page4-elem2 p{
+    font-size: 22px;
+    font-weight: 100;
+    font-family: "Domaine";
+    color: #535353;
+}
+.page4-elem2 .img-div{
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid black;
+}
+.page4-elem2:hover img{
+    scale: 1.1;
+}
+.page4-left-bottom{
+    width: 100%;
+    height: 70%;
+    padding: 30px;
+}
+.page4-left-bottom img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.page4-right{
+    width: 35%;
+    height:100%;
+}
+
+.page4-right-top h2{
+    font-family: "canopee";
+    font-size: 120px;
+    font-weight: 100;
+    line-height: 130px;
+    letter-spacing: -8px;
+    text-align: center;
+}
+.page4-right-top h2 span{
+    font-family: "canopee";
+    font-size: 210px;
+}
+.page4-right-top h4{
+    font-family: "domaine";
+    font-size: 30px ;
+    font-weight: 100;
+    margin: 40px 60px;
+}
+.anda{
+    margin: 0 60px;
+    width: 80%;
+    height: 250px;
+    background-color: #C6BEB5;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.801);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all ease 1s;
+}
+.anda img{
+    height: 20%;
+    transition: all ease 1s;
+    transform: translateX(-140%);
+}
+.anda:hover img{
+    transform: translateX(70%);
+}
+.anda:hover h1{
+    transform: translateX(110%);
+}
+.anda h1{
+    font-size: 76px;
+    font-family: canopee;
+    transform: translateX(-30%);
+    font-weight: 100;
+    transition: all ease 1s;
+}
+.page5{
+    width: 100%;
+    background-color: #C4BDB3;
+    padding: 10px 30px;
+    margin: 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.797);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.797);
+}
+.page5elem1,.page5elem2,.page5elem3,.page5elem4 {
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page5elem1 h3,.page5elem2 h3,.page5elem3 h3,.page5elem4 h3{
+    font-family: canopee;
+    font-weight: 100;
+    font-size: 35px;
+}
+.page5elem1 h3 span ,.page5elem2 h3 span ,.page5elem3 h3 span ,.page5elem4 h3 span{
+    font-weight: 900;
+    font-size: 70px;
+}
+.page5elem1 p ,.page5elem2 p ,.page5elem3 p ,.page5elem4 p{
+    font-size: 180px;
+}
+.page6{
+    width: 100%;
+    height: 100vh;
+    padding:80px 0px;
+    background-color: #C4BDB3;
+    display: flex;
+}
+.page6-left{
+    width: 50%;
+    height: 100%;
+}
+.page6-left-top{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+
+.page6-left-top img{
+height: 100%;
+width: 30%;
+}
+.page6-right{
+    width: 50%;
+    height: 100%;
+    
+}
+.page6-left-top h1{
+    font-family: canopee;
+    font-weight: 100;
+    font-size: 450px;
+    margin-top: -9vh;
+}
+.page6-right img{
+    width: 100%;
+    height: 105%;
+    object-fit: cover;
+}
+.page6-left >h1{
+    font-family: canopee;
+    font-weight: 100;
+    font-size: 450px; 
+    margin-top: -5vh;
+}
+.page7{
+    width: 100%;
+    height: 100vh;
+    padding:20px;
+    background-color: #C4BDB3;
+    padding: 30px;
+}
+.page7-top{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+}
+.page7-top img{
+    height: 100%;
+    border: 1px solid black;
+}
+.page7-top h1{
+    font-family: canopee;
+    font-weight: 100;
+    font-size: 450px; 
+    letter-spacing: -25px;
+    margin-left: 10px;
+}
+.page7-bottom{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.page7-bottom h1{
+    width: 100%;
+    font-weight: 100;
+    font-size: 400px;
+    font-family: "Canopee";
+    background-color: #000000e4;
+    color: #C6BEB5;
+    line-height: 350px;
+    letter-spacing: -20px;
+    padding: 0 20px;
+}
+.page7-bottom-right {
+    padding: 0 20px;
+}
+.page7-bottom-right p{
+font-size: 35px;
+margin-left: 10px;
+color:  #323232;
+font-family: domaine;
+}
+
+.page7-bottom-right h2{
+    font-size: 120px;
+    margin-left: 10px;
+    font-family: canopee;
+    font-weight: 100;
+    letter-spacing: -5px;
+    }
+.page8{
+    width: 100%;
+    height: 110vh;
+    background-color: #C4BDB3;
+    padding: 30px;
+    border: none;
+}
+.page8top{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+.card1{
+    height: 50vh;
+    width: 42%;
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 10px;
+     position: absolute;
+     background-color: #C4BDB3;
+     cursor: pointer;
+     transition: all ease 1s;
+}
+.card2{
+    height: 50vh;
+    width: 42%;
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #C4BDB3;
+    left: 19%;
+    z-index: 1;
+    cursor: pointer;
+    transition: all ease 1s;
+}
+.card3{
+    height: 50vh;
+    width: 42%;
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #C4BDB3;
+    position: absolute;
+    left: 38%;
+    z-index: 2;
+    cursor: pointer;
+    transition: all ease 1s;
+}
+.card4{
+    height: 50vh;
+    width: 42%;
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #C4BDB3;
+position: absolute;
+left: 57%;
+z-index: 3;
+cursor: pointer;
+transition: all ease 1s;
+}
+.card1:hover {
+    z-index: 99;
+    background-color: #a19481; 
+}
+.card2:hover{
+    z-index: 99;
+    background-color: #a19481; 
+}
+.card3:hover{
+    z-index: 99;
+    background-color: #a19481; 
+}
+.card4:hover{
+    z-index: 99;
+    background-color: #a19481; 
+}
+.card-inner {
+    height: 100%;
+    width: 100%;
+    border: dashed;
+    border-width: 3px 3px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-inner h1{
+    font-size: 35px;
+    font-family: domaine;
+    font-weight: 100;
+    color: #323232;
+    text-decoration:1px underline;
+}
+.card-bottom{
+    display: flex;
+    align-items: center;
+}
+.card-bottom-img{
+height: 50px;
+width: 50px;
+border: 1px solid black;
+border-radius: 50%;
+overflow: hidden;
+margin-right: 15px;
+}
+.card-bottom-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-bottom h2{
+    font-size: 35px;
+    font-family: canopee;
+    font-weight: 100;
+}
+.card-bottom p{
+    font-size: 25px;
+    font-family: domaine;
+    font-weight: 100;
+    color: #323232;
+}
+.page8 .elems{
+    padding: 20px 30px;
+    height: 45vh;
+    /* background-color: #B73C12; */
+}
+.page8 .elem2{
+    padding: 0px 30px;
+
+}
+.page9{
+    width: 100%;
+    height: 38vh;
+    padding:20px;
+    background-color: #C4BDB3;
+}
+.page9-top{
+    padding: 30px 0;
+    width: 100%;
+white-space: nowrap;
+overflow-x: auto;
+overflow-y: hidden;
+border-bottom: 1px solid black;
+border-top: 1px solid black;
+}
+.page9-top::-webkit-scrollbar{
+    display: none;
+}
+.page9-top h1{
+font-size: 100px;
+font-weight: 100;
+font-family: "domaine";
+margin-right: 20px;
+display: inline-block;
+animation-name: scroll;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+.page9-top h1 span{
+    font-family: canopee;
+    background-color: black;
+    color: #C6BEB5;
+    padding: 0 12px;
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(calc(-100% - 24px));
+    }
+}
+.page9-top:hover h1{
+    animation-play-state: paused;
+}
+.page9bottom{
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.page9bottom-left{
+    width: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #B73C12; */
+}
+.page9bottom-left h3{
+    font-family: canopee;
+    font-weight: 100;
+    font-size: 25px;
+}
+.page9bottom-left h4{
+    font-family: domaine;
+    font-weight: 100;
+    font-size: 25px;
+}
+.page9bottom-right{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page9bottom-right h3{
+    font-family: canopee;
+    font-weight: 100;
+    font-size: 25px;
+}
+.page9bottom-right p{
+    font-family: canopee;
+    font-weight: 100;
+    font-size: 25px;
+}
